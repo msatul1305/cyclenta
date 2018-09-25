@@ -1,0 +1,55 @@
+<html>
+    <title>Phone Test</title>
+    <head>
+            <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+            <script>
+                    // Initialize Firebase
+                    var config = {
+                      apiKey: "AIzaSyAKSkeK2GsD7iHcUB9pdwXAD2I-S9JPedU",
+                      authDomain: "cyclenta.firebaseapp.com",
+                      databaseURL: "https://cyclenta.firebaseio.com",
+                      projectId: "cyclenta",
+                      storageBucket: "",
+                      messagingSenderId: "244705708929"
+                    };
+                    firebase.initializeApp(config);
+                      </script>
+            
+         
+                <script src="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.js"></script>
+                <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.css" />
+                <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+                <script src="js/phoneAuth.js"></script>
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </head>
+    <body>
+            <div id="container">
+                <div id="loading"></div>
+                <div id="loaded" class="hidden">
+                  <div id="main">
+                    <div id="user-signed-in" class="hidden">
+
+                                  Name <input id="usName" type="text" >
+                                  Email  <input id="usEmail" type="email" >
+                                    <button id="subm" onclick="fetchNm()">Submit</button>
+                    
+
+                    </div>
+                    <div id="user-signed-out" class="hidden">
+                      <h4>Login using Your Phone</h4>
+                      <div id="firebaseui-spa">
+                        <div id="firebaseui-container"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </body>
+       
+   
+    
+
+</html>
