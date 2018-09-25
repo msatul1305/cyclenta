@@ -16,6 +16,10 @@
 <link href="plugins/jquery-timepicker/jquery.timepicker.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->	
 
 
@@ -66,6 +70,9 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
     display: inline-block;
     font-size: 16px;
 }
+html {
+  scroll-behavior: smooth;
+}
 </style>
 <body>
 
@@ -84,10 +91,10 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 						</div>
 						<nav class="main_nav">
 							<ul class="d-flex flex-row align-items-center justify-content-start">
-								<li style="color:#A18276;"><a href="index.html" style="color:#7494EA;hover:#A18276;">home</a></li>
-								<li><a href="#sig" style="color:#7494EA;">about</a></li>
-								<li><a href="#feature">Features</a></li>
-								<li><a href="#contact">contact</a></li>
+								<li style="color:#A18276;"><a href="#home" style="color:red;hover:#A18276;">home</a></li>
+								<li><a href="#sig" style="color:red">about</a></li>
+								<li><a href="#feature" style="color:red;">Features</a></li>
+								<li><a href="#contact" style="color:red;">contact</a></li>
 							</ul>
 						</nav>
 						<div class="reservations_phone ml-auto" style="border:solid 0px #FFFFFF;"><button class="btn"style="border:solid 2px #FFFFFF; background-color: rgba(100, 100, 100, 0.5);" onclick="check()" >Get Started</button></div>
@@ -98,7 +105,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	</header>
 
 
-	<div class="home">
+	<div class="home" id="home">
 		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/The-ofo-Bicycle-Image-2.jpg" data-speed="0.8"></div>
 		<div class="home_container">
 			<div class="container">
@@ -108,7 +115,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 							<div class="home_subtitle page_subtitle"></div>
 							<div class="home_title"><h1>An Extraordinery Experience</h1></div>
 							<div class="home_text ml-auto mr-auto">
-								<p>You dont have to depend on anyone now. Cyclenta is your way.</p>
+								<p style="font-size:1.6em">You dont have to depend on anyone now. Cyclenta is your way.</p>
 							</div>
 						</div>
 					</div>
@@ -146,7 +153,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 					<div class="col-lg-7 offset-lg-5">
 						<div class="sig_image">
 							<div class="background_image" style="background-image:url(images/cycle.jpg)"></div>
-							<img src="images/sig.jpg" alt="">
+							<!-- <img src="images/sig.jpg" alt=""> -->
 						</div>
 					</div>
 				</div>
@@ -157,61 +164,93 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 			<div class="row themenu_row" id="feature">
 						<section class="mbr-cards mbr-section mbr-section-nopadding" id="features7-4" data-rv-view="25" style="background-color: rgb(239, 239, 239);">
 
-    
+  
 
-    <div class="mbr-cards-row row">
-        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 40px; padding-bottom: 40px;">
-            <div class="container">
-                <div class="card cart-block">
-                    <div class="card-img iconbox"><a href="index.html#features7-4" class="etl-icon icon-map mbr-iconfont mbr-iconfont-features7" style="color: rgb(255, 255, 255);"></a></div>
-                    <div class="card-block">
-                        <h4 class="card-title" style="color:red;">Locate Bike</h4>
-                        
-                        <p class="card-text" style="color:blue;">Most likely you will see one near you, &nbsp;in case you dont, locate an available bike using Cyclenta app.</p>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 40px; padding-bottom: 40px;">
-            <div class="container">
-                <div class="card cart-block">
-                    <div class="card-img iconbox"><a href="index.html#features7-4" class="mbri-touch mbr-iconfont mbr-iconfont-features7" style="color: rgb(255, 255, 255);"></a></div>
-                    <div class="card-block">
-                        <h4 class="card-title" style="color:red;">Scan QR Code</h4>
-                        
-                        <p class="card-text" style="color:blue;">Click Unlock icon and scan the QR code on the bike. Bike will open automatically.</p>
-                        
-                    </div>
-                </div>
-          </div>
-        </div>
-        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 40px; padding-bottom: 40px;">
-            <div class="container">
-                <div class="card cart-block">
-                    <div class="card-img iconbox"><a href="index.html#features7-4" class="etl-icon icon-bike mbr-iconfont mbr-iconfont-features7" style="color: rgb(255, 255, 255);"></a></div>
-                    <div class="card-block">
-                        <h4 class="card-title" style="color:red;">Ride&nbsp;<br></h4>
-                        
-                        <p class="card-text" style="color:blue;">Enjoy your bike ride. Take to office, shopping or just for fun. Follow rules and look after your safety.</p>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 40px; padding-bottom: 40px;">
-            <div class="container">
-                <div class="card cart-block">
-                    <div class="card-img iconbox"><a href="index.html#features7-4" class="mbri-lock mbr-iconfont mbr-iconfont-features7" style="color: rgb(255, 255, 255);"></a></div>
-                    <div class="card-block">
-                        <h4 class="card-title" style="color:red;">Park and Lock</h4>
-                        
-                        <p class="card-text" style="color:blue;">Park the bike at Cyclenta Zone only, the lock will close  automatically, and press end ride in the App. We will deduct the money from your wallet.&nbsp;</p>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
+    	
+    </div>
+
+      <div class="container-fluid">
+    	<div class="row">
+    		<div class="col-md-3">
+    			<div class="panel panel-primary">
+     			<div class="panel-heading" style="font-size: 1.5em">Locate Bike</div>
+    			<div class="panel-body" style="font-size:1.5em">Most likely you will see one near you, &nbsp;in case you dont, locate an available bike using Cyclenta app.</div>
+    			</div>
+    		</div>
+    		<div class="col-md-3">
+    			<div class="panel panel-primary">
+     			<div class="panel-heading" style="font-size: 1.5em">Scan QR Code</div>
+    			<div class="panel-body" style="font-size:1.7em">Click Unlock icon and scan the QR code on the bike. Bike will open automatically.</div>
+    			</div>
+    		</div>
+    		<div class="col-md-3">
+    			<div class="panel panel-primary">
+     			<div class="panel-heading" style="font-size: 1.5em">Ride</div>
+    			<div class="panel-body" style="font-size:1.6em">Enjoy your bike ride. Take to office, shopping or just for fun. Follow rules and look after your safety.</div>
+    			</div>
+    		</div>
+    		<div class="col-md-3">
+    			<div class="panel panel-primary">
+     			<div class="panel-heading" style="font-size: 1.5em">Park and Lock</div>
+    			<div class="panel-body" style="font-size:1.5em">Park the bike at Cyclenta Zone only, the lock will close automatically, and press end ride in the App..&nbsp;</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+	    <!-- <div class="mbr-cards-row row">
+	        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 40px; padding-bottom: 40px;">
+	            <div class="container">
+	                <div class="card cart-block">
+	                    <div class="card-img iconbox"><a href="index.html#features7-4" class="etl-icon icon-map mbr-iconfont mbr-iconfont-features7" style="color: rgb(255, 255, 255);"></a></div>
+	                    <div class="card-block">
+	                        <h4 class="card-title" style="color:red;">Locate Bike</h4>
+	                        
+	                        <p class="card-text" style="color:blue;">Most likely you will see one near you, &nbsp;in case you dont, locate an available bike using Cyclenta app.</p>
+	                        
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 40px; padding-bottom: 40px;">
+	            <div class="container">
+	                <div class="card cart-block">
+	                    <div class="card-img iconbox"><a href="index.html#features7-4" class="mbri-touch mbr-iconfont mbr-iconfont-features7" style="color: rgb(255, 255, 255);"></a></div>
+	                    <div class="card-block">
+	                        <h4 class="card-title" style="color:red;">Scan QR Code</h4>
+	                        
+	                        <p class="card-text" style="color:blue;">Click Unlock icon and scan the QR code on the bike. Bike will open automatically.</p>
+	                        
+	                    </div>
+	                </div>
+	          </div>
+	        </div>
+	        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 40px; padding-bottom: 40px;">
+	            <div class="container">
+	                <div class="card cart-block">
+	                    <div class="card-img iconbox"><a href="index.html#features7-4" class="etl-icon icon-bike mbr-iconfont mbr-iconfont-features7" style="color: rgb(255, 255, 255);"></a></div>
+	                    <div class="card-block">
+	                        <h4 class="card-title" style="color:red;">Ride&nbsp;<br></h4>
+	                        
+	                        <p class="card-text" style="color:blue;">Enjoy your bike ride. Take to office, shopping or just for fun. Follow rules and look after your safety.</p>
+	                        
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 40px; padding-bottom: 40px;">
+	            <div class="container">
+	                <div class="card cart-block">
+	                    <div class="card-img iconbox"><a href="index.html#features7-4" class="mbri-lock mbr-iconfont mbr-iconfont-features7" style="color: rgb(255, 255, 255);"></a></div>
+	                    <div class="card-block">
+	                        <h4 class="card-title" style="color:red;">Park and Lock</h4>
+	                        
+	                        <p class="card-text" style="color:blue;">Park the bike at Cyclenta Zone only, the lock will close  automatically, and press end ride in the App. We will deduct the money from your wallet.&nbsp;</p>
+	                        
+	                    </div>
+	                </div>
+	            </div>
+	        </div> -->
         
         
     </div>
@@ -231,7 +270,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 						<div class="res_title">Book your ride today!</div>
 						<div class="res_form_container">
 							<form action="#" id="res_form" class="res_form"
-								<p style="color:green">Say goodbye to the honks and jams! Welcome to the Trings and Pedals!</p>
+								<p style="color:green;font-size:1.8em">Say goodbye to the honks and jams! Welcome to the Trings and Pedals!</p>
 							</form>
 						</div>
 					</div>
