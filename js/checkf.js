@@ -5,7 +5,7 @@
         if (user) {
             window.location = "maps.html";
         } else {
-            window.location = "phoneAth.html";
+            window.location = "maps.html";
         }
       });
 }
